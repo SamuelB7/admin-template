@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
+import Layout from '../components/templates/Layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,11 +15,9 @@ export default function Home() {
       </Head>
       <main>
 
-        <div className="flex justify-center items-center h-screen bg-gradient-to-r from-green-500 to-blue-500">
-          <h1 className="text-3xl font-bold underline">
-            Hello world!
-          </h1>
-        </div>
+        <Layout title='Home page' caption='Simple admin template'>
+          <h3>Content</h3>
+        </Layout>
 
       </main>
     </>
